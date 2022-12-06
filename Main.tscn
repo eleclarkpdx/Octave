@@ -8,51 +8,51 @@
 [node name="FallingKeys" type="Node" parent="."]
 
 [node name="FallingKey1" parent="FallingKeys" instance=ExtResource( 1 )]
-position = Vector2( 50, 50 )
+position = Vector2( 178, 50 )
 color = Color( 0.819608, 0, 0.47451, 0.466667 )
 
 [node name="FallingKey2" parent="FallingKeys" instance=ExtResource( 1 )]
-position = Vector2( 200, 150 )
+position = Vector2( 328, 150 )
 color = Color( 0.819608, 0, 0.47451, 0.466667 )
 inputKey = "key2"
 
 [node name="StaticKeys" type="Node" parent="."]
 
 [node name="StaticKey1" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 50, 850 )
+position = Vector2( 178, 850 )
 color = Color( 0.819608, 0, 0.47451, 0.466667 )
 
 [node name="StaticKey2" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 200, 850 )
+position = Vector2( 328, 850 )
 color = Color( 0.819608, 0, 0, 0.584314 )
 inputKey = "key2"
 
 [node name="StaticKey3" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 350, 850 )
+position = Vector2( 478, 850 )
 color = Color( 0.819608, 0.25098, 0, 0.533333 )
 inputKey = "key3"
 
 [node name="StaticKey4" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 500, 850 )
+position = Vector2( 628, 850 )
 color = Color( 0.819608, 0.407843, 0, 0.462745 )
 inputKey = "key4"
 
 [node name="StaticKey5" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 1100, 850 )
+position = Vector2( 972, 850 )
 color = Color( 0.819608, 0.407843, 0, 0.466667 )
 inputKey = "key5"
 
 [node name="StaticKey6" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 1250, 850 )
+position = Vector2( 1122, 850 )
 color = Color( 0.819608, 0.25098, 0, 0.52549 )
 inputKey = "key6"
 
 [node name="StaticKey7" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 1400, 850 )
+position = Vector2( 1272, 850 )
 color = Color( 0.819608, 0, 0, 0.517647 )
 inputKey = "key7"
 
 [node name="StaticKey8" parent="StaticKeys" instance=ExtResource( 2 )]
-position = Vector2( 1550, 850 )
+position = Vector2( 1422, 850 )
 color = Color( 0.819608, 0, 0.47451, 0.494118 )
 inputKey = "key8"
