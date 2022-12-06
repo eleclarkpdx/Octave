@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[sub_resource type="GDScript" id=2]
+
+[sub_resource type="Shader" id=3]
+code = "shader_type canvas_item;
+
+uniform vec3 rgb = vec3(1.0, 1.0, 1.0);
+
+void fragment() {
+    COLOR = texture(TEXTURE, UV); // Get pixel color from the image texture
+    COLOR.rgb = vec3(rgb[0]*COLOR.r, rgb[1]*COLOR.g, rgb[2]*COLOR.b); // Change the color value
+}"
+script = SubResource( 2 )
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 3 )
+shader_param/rgb = Vector3( 1, 1, 1 )

@@ -5,6 +5,8 @@ using System;
 public class Key : Area2D
 {
     [Export]
+    public Color color = new Color(0);
+    [Export]
     public String inputKey = "key1";
     private String textureFile = "temp-";
     private Sprite keySprite;
@@ -19,6 +21,10 @@ public class Key : Area2D
         textureFile += inputKey;
         var texture = (Texture)GD.Load("res://graphics/" + textureFile + ".png");
         keySprite.Texture = texture;
+        
+        var keyShader = (ShaderMaterial)keySprite.Material;
+        Vector3 colorRGB = new Vector3(color.r, color.g, color.b);
+        keyShader.SetShaderParam("rgb", colorRGB);
     }
 
     public override void _Process(float delta)

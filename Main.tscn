@@ -4,33 +4,41 @@
 
 [node name="Main" type="Node"]
 
-[node name="Key" parent="." instance=ExtResource( 1 )]
-position = Vector2( 50, 850 )
+[node name="Key1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 330, 850 )
+color = Color( 0.819608, 0, 0.47451, 0.466667 )
 
 [node name="Key2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 150, 850 )
+position = Vector2( 446, 850 )
+color = Color( 0.819608, 0, 0, 0.584314 )
 inputKey = "key2"
 
 [node name="Key3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 250, 850 )
+position = Vector2( 562, 850 )
+color = Color( 0.819608, 0.25098, 0, 0.533333 )
 inputKey = "key3"
 
 [node name="Key4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 350, 850 )
+position = Vector2( 678, 850 )
+color = Color( 0.819608, 0.407843, 0, 0.462745 )
 inputKey = "key4"
 
 [node name="Key5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 550, 850 )
+position = Vector2( 922, 850 )
+color = Color( 0.819608, 0.407843, 0, 0.466667 )
 inputKey = "key5"
 
 [node name="Key6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 650, 850 )
+position = Vector2( 1038, 850 )
+color = Color( 0.819608, 0.25098, 0, 0.52549 )
 inputKey = "key6"
 
 [node name="Key7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 750, 850 )
+position = Vector2( 1154, 850 )
+color = Color( 0.819608, 0, 0, 0.517647 )
 inputKey = "key7"
 
 [node name="Key8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 850, 850 )
+position = Vector2( 1270, 850 )
+color = Color( 0.819608, 0, 0.47451, 0.494118 )
 inputKey = "key8"
