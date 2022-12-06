@@ -5,46 +5,23 @@ using System;
 public class Key : Area2D
 {
     [Export]
-    public Color color = new Color(0);
+    public Color color = new Color(1);
     [Export]
     public String inputKey = "key1";
     private String textureFile = "temp-";
-    private Sprite keySprite;
-    private float[] animScaleValues = new float[] {1.0F, 0.9F, 1.1F, 1.07F, 1.04F, 1.01F, 0.98F};
-    private int animFrame = 0;
-    private bool playAnim = false;
+    protected Sprite keySprite;
 
-    // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
         keySprite = GetNode<Sprite>("KeySprite");
         textureFile += inputKey;
         var texture = (Texture)GD.Load("res://graphics/" + textureFile + ".png");
         keySprite.Texture = texture;
-        
+
         var keyShader = (ShaderMaterial)keySprite.Material;
         Vector3 colorRGB = new Vector3(color.r, color.g, color.b);
         keyShader.SetShaderParam("rgb", colorRGB);
     }
 
-    public override void _Process(float delta)
-    {
-        if (Input.IsActionJustPressed(inputKey))
-        {
-            playAnim = true;
-        }
-
-        if (playAnim == true)
-        {
-            // TODO: incorporate delta
-            animFrame += 1;
-            if (animFrame >= animScaleValues.Length) {
-                animFrame = 0;
-                playAnim = false;
-            }
-            float scale = animScaleValues[animFrame];
-            keySprite.Scale = new Vector2(scale, scale);
-        }
-    }
 
 }

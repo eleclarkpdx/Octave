@@ -1,44 +1,58 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Key.tscn" type="PackedScene" id=1]
+[ext_resource path="res://FallingKey.tscn" type="PackedScene" id=1]
+[ext_resource path="res://StaticKey.tscn" type="PackedScene" id=2]
 
 [node name="Main" type="Node"]
 
-[node name="Key1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 330, 850 )
+[node name="FallingKeys" type="Node" parent="."]
+
+[node name="FallingKey1" parent="FallingKeys" instance=ExtResource( 1 )]
+position = Vector2( 50, 50 )
 color = Color( 0.819608, 0, 0.47451, 0.466667 )
 
-[node name="Key2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 446, 850 )
+[node name="FallingKey2" parent="FallingKeys" instance=ExtResource( 1 )]
+position = Vector2( 200, 150 )
+color = Color( 0.819608, 0, 0.47451, 0.466667 )
+inputKey = "key2"
+
+[node name="StaticKeys" type="Node" parent="."]
+
+[node name="StaticKey1" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 50, 850 )
+color = Color( 0.819608, 0, 0.47451, 0.466667 )
+
+[node name="StaticKey2" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 200, 850 )
 color = Color( 0.819608, 0, 0, 0.584314 )
 inputKey = "key2"
 
-[node name="Key3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 562, 850 )
+[node name="StaticKey3" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 350, 850 )
 color = Color( 0.819608, 0.25098, 0, 0.533333 )
 inputKey = "key3"
 
-[node name="Key4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 678, 850 )
+[node name="StaticKey4" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 500, 850 )
 color = Color( 0.819608, 0.407843, 0, 0.462745 )
 inputKey = "key4"
 
-[node name="Key5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 922, 850 )
+[node name="StaticKey5" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 1100, 850 )
 color = Color( 0.819608, 0.407843, 0, 0.466667 )
 inputKey = "key5"
 
-[node name="Key6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1038, 850 )
+[node name="StaticKey6" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 1250, 850 )
 color = Color( 0.819608, 0.25098, 0, 0.52549 )
 inputKey = "key6"
 
-[node name="Key7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1154, 850 )
+[node name="StaticKey7" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 1400, 850 )
 color = Color( 0.819608, 0, 0, 0.517647 )
 inputKey = "key7"
 
-[node name="Key8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1270, 850 )
+[node name="StaticKey8" parent="StaticKeys" instance=ExtResource( 2 )]
+position = Vector2( 1550, 850 )
 color = Color( 0.819608, 0, 0.47451, 0.494118 )
 inputKey = "key8"
