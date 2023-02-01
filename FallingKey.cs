@@ -7,6 +7,7 @@ public class FallingKey : Key
     [Export]
     public float fallRate = 10;
     private Vector2 fallRateVec;
+    public Lane lane;
 
     public override void _Ready()
     {
